@@ -20,8 +20,11 @@ void *grow_array(void *arr, int size) {
 
 void save_trie(Trie *trie) {
   FILE *file = fopen(".data/progress", "w+");
+
   fwrite(trie, sizeof(Trie), 1, file);
-  fwrite(&trie->nodes, sizeof(Node), trie->len, file);
+
+  fwrite(trie->nodes, sizeof(Node), trie->len, file);
+
   fclose(file);
 }
 

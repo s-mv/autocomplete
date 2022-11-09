@@ -3,9 +3,12 @@
 
 #include "common.h"
 
+#define CHAR_LEN 64
+
 typedef struct Node {
   char character;
-  Node *children[26];
+  // this is an array of relative pointers essentially
+  usize children[CHAR_LEN];  // these will never be 0
   bool is_end;
 } Node;
 

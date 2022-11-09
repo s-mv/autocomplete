@@ -1,10 +1,13 @@
 #ifndef smv_autocomplete_common_h
 #define smv_autocomplete_common_h
 
+#include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+typedef size_t usize;
 
 typedef struct Node Node;
 typedef struct Trie Trie;
