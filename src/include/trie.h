@@ -5,10 +5,12 @@
 
 #define CHAR_LEN 64
 
+typedef usize ID;
+
 typedef struct Node {
   char character;
   // this is an array of relative pointers essentially
-  usize children[CHAR_LEN];  // these will never be 0
+  ID children[CHAR_LEN];  // these should never be 0 if initialised
   bool is_end;
 } Node;
 

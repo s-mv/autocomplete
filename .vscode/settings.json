@@ -1,7 +1,0 @@
-{
-  "files.associations": {
-    "common.h": "c",
-    "trie.h": "c",
-    "random": "c"
-  }
-}

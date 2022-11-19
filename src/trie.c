@@ -69,13 +69,14 @@ void add_word(const char *word) {
 
 void print_trie(Node *root, char *str, int level, int limit) {
   static int inner_lim = 0;
+
   if (inner_lim >= limit) {
     return;
   }
 
   if (root->is_end) {
     str[level] = '\0';
-    printf("%s\n", str);
+    printf("  %s\n", str);
     inner_lim++;
   }
 
